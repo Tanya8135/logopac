@@ -1,6 +1,6 @@
 body{
     font-family: 'DM Sans', sans-serif;
-}
+    }
 
 .container {
     max-width: 1070px;
@@ -83,6 +83,7 @@ body{
     color: #696871;
     max-width: 410px;
     margin-bottom: 50px;
+    font-family: 'Mulish', sans-serif;
 }
 
 .button__violet{
@@ -196,6 +197,7 @@ body{
     line-height: 28px;
     letter-spacing: -0.562737px;
     color: #696871;
+    font-family: 'Mulish', sans-serif;
 }
 
 .item:hover .item__text, .item:hover .item-title, .item:hover .item__li{
@@ -221,7 +223,8 @@ body{
     font-size: 17px;
     line-height: 50px;
     letter-spacing: -0.531474px;
-    color: #696871;;
+    color: #696871;
+    font-family: 'Mulish', sans-serif;
 }
 
 .button__item{
@@ -235,4 +238,77 @@ body{
     background: #9F3919;
     color: white;
     transition: 500ms;
+}
+
+@media screen and (max-width: 550px){
+    .container{
+        max-width: 375px;
+    }
+
+
+    .header .nav, .header__button-container{
+        display: none;
+    }
+
+    .header__flex{
+        justify-content: center;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .about__title{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    .button__transparent{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .about img{
+        width: 100%;
+    }
+
+    .subscribe{
+        flex-direction: column-reverse;
+    }
+
+    .input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .img__container{
+        margin-top: 30px;
+    }
+
+    .plan__title{
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .plan__flex{
+        flex-direction: column;
+    }
+
+    .item:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+
+    .item button{
+        width: 80%;
+    }
+
+    .footer__flex{
+        flex-direction: column;
+    }
 }
